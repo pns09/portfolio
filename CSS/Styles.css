@@ -93,6 +93,15 @@
 #navbarNavDropdown ul.navbar-nav li.nav-item.active{
 	text-decoration:underline;
 }
+.btn{
+	text-transform: uppercase;
+	text-align: center;
+	width:300px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-weight: 400;
+}
 .fixedImage {
     background-image: url("../img/img3.jpeg");
     min-height: 350px; 
@@ -256,6 +265,53 @@ footer{
 	min-height: 30px;
 	padding: 0 15px;
 }
+.navbar-light .navbar-toggler {
+	border: none!important;
+}
+#navToggle {
+	position: relative;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+	width:30px;
+    height: 25px;
+    padding: 5px 0;
+  }
+  #navToggle input{
+	display: block;
+	width: 30px;
+	height: 18px;
+	z-index: 2;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	margin: 0;
+  }
+  #navToggle span{
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #000;
+	margin-bottom: 5px;
+	z-index: 1;
+	transition: all 0.5s ease;
+	transform-origin: 20px 0px; 
+  }
+  
+  #navToggle input:checked ~ span {
+    transform: translate(-2px, -2px) rotate(45deg);
+}
+  #navToggle input:checked ~ span:nth-child(2)
+  {
+	transform: translate(-5px, 5px) rotate(-45deg);
+  }
+  #navToggle input:checked ~ span:nth-child(3)
+  {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2); 
+  }
+
 @media (max-width: 575px) { 
 	.hidden-xs{
 		display: none;
@@ -284,6 +340,32 @@ footer{
 	}
 	.gameCol{
 		width:25%!important;
+	}
+	.navbar-brand{
+		font-family: 'Mafakanav',Arial, Helvetica, sans-serif;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	#navbarNavDropdown ul.navbar-nav li.nav-item {
+		font-family: 'GoodTimes',Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 0.6em;
+		text-align: center;
+		border-bottom: 1px solid #ccc;
+	}
+	#navbarNavDropdown ul.navbar-nav li.nav-item:last-child {
+		border-bottom: none;
+	}
+	footer {
+		letter-spacing: 1px;
+		font-size: 0.8em;
+	}
+	.btn{
+		width:100%;
+	}
+	.ContactHeader{
+		font-size: 1.2em;
+		letter-spacing: 0.2em;
 	}
  }
 @media (min-width: 576px) and (max-width:767.98px){ 
