@@ -242,7 +242,9 @@ footer{
 }
 .imgBlock img{
     border: 2px solid #fff;
-    border-radius: 50%;
+	border-radius: 50%;
+	width:235px;
+	height:235px;
 }
 .bingoNumbers p{
 	width: 50px;
