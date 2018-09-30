@@ -19,10 +19,10 @@ function betterLuckNextTime(){
  * and some game logic included
  */
 function addNumber() {
-    let x = Math.floor((Math.random() * 25) + 1);
+    let x = Math.floor((Math.random() * 13) + 1);
     for(let i=0; i<a.length; i++){
         if(a.includes(x)){
-            x = Math.floor((Math.random() * 25) + 1)
+            x = Math.floor((Math.random() * 13) + 1)
         }
         else{
             continue
@@ -67,10 +67,19 @@ function bingo(){
 /**
  * Adding a class to the matching numbers in our ticket when clicked upon
  */
-$(".gameCol span").click(function(){
-    $(this).parent().addClass("recorded")
+$(".gameCol span").click(async function(){
+    await css($(this).parent());
     ticket.push($(this).html())
     if(ticket.length==5){
         bingo();
     }
 })
+/**
+ * 
+ * @param {*} element apply css to this element
+ * returns true when css is applied to this 
+ */
+function css(element){
+    element.css("background","#cccccc")
+    return Promise.resolve(1);
+}
