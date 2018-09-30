@@ -42,7 +42,7 @@
 	width: 100% !important;
 	margin-left: 0!important;
 }
-
+/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
