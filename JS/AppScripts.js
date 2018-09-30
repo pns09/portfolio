@@ -16,7 +16,7 @@ function betterLuckNextTime(){
 }
 /**
  * Generates a random number within the range of 1 to 25
- * and some game logic 
+ * and some game logic included
  */
 function addNumber() {
     let x = Math.floor((Math.random() * 25) + 1);
