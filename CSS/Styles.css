@@ -254,6 +254,10 @@ footer{
 	border:1px solid #ccc;
 	border-radius: 5px;
 	float: left;
+    padding-top: 10px;
+    background: limegreen;
+    color: #ffffff;
+    font-weight: bold;
 }
 .gameGrid{
 	padding: 5px 15px;
@@ -266,6 +270,14 @@ footer{
 	background: #ffffff;
 	min-height: 30px;
 	padding: 0 15px;
+}
+.gameGrid .gameCol span{
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+.gameGrid .gameCol.recorded{
+	background: #cccccc;
 }
 .navbar-light .navbar-toggler {
 	border: none!important;
