@@ -19,10 +19,10 @@ function betterLuckNextTime(){
  * and some game logic included
  */
 function addNumber() {
-    let x = Math.floor((Math.random() * 13) + 1);
+    let x = Math.floor((Math.random() * 25) + 1);
     for(let i=0; i<a.length; i++){
         if(a.includes(x)){
-            x = Math.floor((Math.random() * 13) + 1)
+            x = Math.floor((Math.random() * 25) + 1)
         }
         else{
             continue
