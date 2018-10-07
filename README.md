@@ -20,4 +20,6 @@ How to play BINGO
 4)Repeat steps 2 and 3 untill 5 numbers matches within 15 chances.
 5)Once you are done with 5 matched numbers you win.
 
+LINK to the demo
 
+https://pradykolli.github.io/portfolio/index.html
