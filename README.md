@@ -2,9 +2,11 @@
 This is a sample portfolio web application to test the skills in HTML, CSS and jQuery
 
 Development Tools
+
 Visual Studio Code
 
 Get Started
+
 You can navigate through three pages.
 1)Home page - A little about my self. 
 2)Bingo Game- A small application built on Responsive Web Design (used Bootstrap Framework) and jQuery v3.3.1.
